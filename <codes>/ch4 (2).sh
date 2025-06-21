@@ -1,3 +1,12 @@
+unset -f function_name #This removes the function definition from memory.
+declare -f #To see all functions with their full definitions:
+#To view just the function names:
+declare -F
+#Output of declare -f may be long—use more, less, or redirect to a file:
+declare -f | more
+declare -f > functions.txt
+
+
 #!/bin/bash
 
 file="example.fasta"
